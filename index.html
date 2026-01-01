@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Identity Realignment | Siddhesh Chaube</title>
+    <title>System Transition | Siddhesh Chaube</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet"/>
     <script>
@@ -20,7 +20,10 @@
             }
         }
     </script>
-    <meta http-equiv="refresh" content="20;url=https://ogsiddhesh.in">
+    <style>
+        .pause-glow { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); }
+        .resume-glow { box-shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
+    </style>
 </head>
 <body class="bg-obsidian font-display text-slate-200 selection:bg-electric-blue/30 selection:text-white overflow-x-hidden">
 
@@ -35,20 +38,20 @@
             
             <header class="space-y-6">
                 <div class="inline-flex items-center px-4 py-1.5 border border-slate-700/50 rounded-full bg-slate-800/30 backdrop-blur-md">
-                    <span class="text-[10px] md:text-xs font-bold tracking-[0.3em] text-electric-blue uppercase">Identity Architecture Realignment</span>
+                    <span class="text-[10px] md:text-xs font-bold tracking-[0.3em] text-electric-blue uppercase">Domain Transition Protocol</span>
                 </div>
                 <h1 class="text-4xl md:text-7xl font-light tracking-tight text-white leading-tight">
-                    Refining my <span class="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">Global Presence.</span>
+                    Moving to a <span class="font-bold italic text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-500">New High-Tier Domain.</span>
                 </h1>
             </header>
 
             <div class="space-y-8 max-w-2xl mx-auto">
                 <p class="text-base md:text-xl text-slate-400 leading-relaxed font-light px-4">
-                    I am currently executing a strategic migration of my digital assets. To better serve my enterprise partners and align with international professional standards, all operations have been moved to a new high-tier domain.
+                    I am migrating my digital portfolio to a more secure and professional address. This ensures better performance and a more reliable experience for all my visitors and partners.
                 </p>
                 <div class="flex items-center justify-center gap-2 text-xs md:text-sm text-slate-500 font-medium tracking-widest uppercase">
                     <span class="w-8 h-[1px] bg-slate-800"></span>
-                    Legacy System Status: Decommissioning
+                    Legacy Site Status: Retirement in Progress
                     <span class="w-8 h-[1px] bg-slate-800"></span>
                 </div>
             </div>
@@ -56,7 +59,7 @@
             <div class="relative group max-w-lg mx-auto">
                 <div class="absolute -inset-1 bg-gradient-to-r from-electric-blue to-blue-900 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-700"></div>
                 <div class="relative bg-slate-900/80 border border-slate-700/50 p-6 md:p-10 rounded-2xl backdrop-blur-sm shadow-2xl">
-                    <span class="block text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-4">Official New Entry Point</span>
+                    <span class="block text-[10px] uppercase tracking-[0.2em] text-slate-500 mb-4">Official Destination</span>
                     <a href="https://ogsiddhesh.in" class="text-2xl md:text-5xl font-bold text-white tracking-tighter hover:text-electric-blue transition-colors break-all">
                         ogsiddhesh.in
                     </a>
@@ -64,8 +67,8 @@
             </div>
 
             <div class="flex flex-col items-center gap-10">
-                <a href="https://ogsiddhesh.in" class="group relative px-10 py-4 bg-white text-obsidian font-bold rounded-full overflow-hidden transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.1)]">
-                    <span class="relative z-10">Proceed to New Site</span>
+                <a href="https://ogsiddhesh.in" class="group relative px-10 py-4 bg-white text-obsidian font-bold rounded-full transition-all transform hover:scale-105 active:scale-95 shadow-lg">
+                    Proceed Immediately
                 </a>
 
                 <nav class="flex items-center gap-8 border-b border-slate-800/50 pb-2">
@@ -76,16 +79,19 @@
         </div>
 
         <footer class="mt-20 w-full max-w-5xl border-t border-slate-800/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] md:text-xs text-slate-500 tracking-wide">
-            <div class="flex items-center gap-3 bg-slate-900/50 px-4 py-2 rounded-full border border-slate-800/50">
+            
+            <div id="timer-toggle" class="flex items-center gap-3 bg-slate-900/50 px-5 py-2.5 rounded-full border border-slate-700/50 cursor-pointer hover:border-electric-blue transition-all resume-glow select-none" title="Click to Pause/Resume">
                 <div class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-electric-blue opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-electric-blue"></span>
+                    <span id="ping-effect" class="animate-ping absolute inline-flex h-full w-full rounded-full bg-electric-blue opacity-75"></span>
+                    <span id="status-dot" class="relative inline-flex rounded-full h-2 w-2 bg-electric-blue"></span>
                 </div>
-                <span>Redirecting in <span id="timer" class="font-bold text-white">20</span>s ...</span>
+                <span id="timer-text" class="font-medium">Redirecting in <span id="timer" class="font-bold text-white">20</span>s</span>
+                <span id="action-icon" class="ml-1 text-slate-400 font-bold">[CLICK TO PAUSE]</span>
             </div>
-            <div class="flex items-center gap-4">
-                <a href="mailto:contactme@ogsiddhesh.in?subject=System%20Redirect%20Feedback" class="hover:text-electric-blue transition-colors underline underline-offset-4">
-                    Connectivity Support: contactme@ogsiddhesh.in
+
+            <div class="flex items-center gap-4 text-center md:text-right">
+                <a href="mailto:contactme@ogsiddhesh.in" class="hover:text-electric-blue transition-colors underline underline-offset-4">
+                    Support: contactme@ogsiddhesh.in
                 </a>
             </div>
         </footer>
@@ -93,15 +99,49 @@
 
     <script>
         let timeLeft = 20;
+        let isPaused = false;
         const timerElement = document.getElementById('timer');
+        const timerText = document.getElementById('timer-text');
+        const timerToggle = document.getElementById('timer-toggle');
+        const actionIcon = document.getElementById('action-icon');
+        const statusDot = document.getElementById('status-dot');
+        const pingEffect = document.getElementById('ping-effect');
+
+        // Main Countdown Logic
         const countdown = setInterval(() => {
-            if(timeLeft > 0) {
-                timeLeft--;
-                timerElement.textContent = timeLeft;
-            } else {
-                clearInterval(countdown);
+            if (!isPaused) {
+                if (timeLeft > 0) {
+                    timeLeft--;
+                    timerElement.textContent = timeLeft;
+                } else {
+                    clearInterval(countdown);
+                    window.location.href = "https://ogsiddhesh.in";
+                }
             }
         }, 1000);
+
+        // Play/Pause Feature
+        timerToggle.addEventListener('click', () => {
+            isPaused = !isPaused;
+            
+            if (isPaused) {
+                // UI changes for PAUSED state
+                actionIcon.textContent = "[CLICK TO RESUME]";
+                actionIcon.classList.add('text-red-400');
+                statusDot.classList.replace('bg-electric-blue', 'bg-red-500');
+                pingEffect.classList.replace('bg-electric-blue', 'bg-red-500');
+                timerToggle.classList.replace('resume-glow', 'pause-glow');
+                timerToggle.classList.add('border-red-500/50');
+            } else {
+                // UI changes for RESUMED state
+                actionIcon.textContent = "[CLICK TO PAUSE]";
+                actionIcon.classList.remove('text-red-400');
+                statusDot.classList.replace('bg-red-500', 'bg-electric-blue');
+                pingEffect.classList.replace('bg-red-500', 'bg-electric-blue');
+                timerToggle.classList.replace('pause-glow', 'resume-glow');
+                timerToggle.classList.remove('border-red-500/50');
+            }
+        });
     </script>
 </body>
 </html>
